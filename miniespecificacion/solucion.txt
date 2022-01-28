@@ -78,7 +78,7 @@ funcion crearTwitter()
 	leer idioma
 	Escribir "Ingrese su correo: "
 	leer correo
-	Escribir "Datos de la cuenta de Facebook: "
+	Escribir "Datos de la cuenta de Twitter: "
 	Escribir "Usuario: " + usuario + "\nNombres: " + nombres + "\nApellidos: " + apellidos + "\nEdad: " + edad + "\nCiudad: " + ciudad + 
 		 "\nPais: " + pais + "\nIdioma: " + idioma + "\nCorreo: " + correo + "\n" 
 fin funcion crearTwitter
@@ -99,63 +99,75 @@ funcion crearWhatsApp()
 	leer ciudad
 	Escribir "Ingrese el país: "
 	leer pais
-	Escribir "Datos de la cuenta de Facebook: "
+	Escribir "Datos de la cuenta de WhatsApp: "
 	Escribir "Usuario: " + usuario + "\nTelefono: " + telefono + "\nEdad: " + edad + "\nCiudad: " + ciudad + "\nPais: " + pais
 fin funcion crearWhatsApp
 
 funcion crearTelegram()
 	usuario, x(n)[{A-Z}, {a-z}, {BS}, {0-n}]
-	edad, x(n)[{0-n}]
+	telefono, x(n)[{0-n}]
 	ciudad, x(n)[{A-Z}, {a-z}, {BS}]
 	pais, x(n)[{A-Z}, {a-z}, {BS}]
-	correo, x(n)[{A-Z}, {a-z}, {BS}, {0-n}]
-	cadena, x(n)[{A-Z}, {a-z}, {BS}] <-- ""
+	area, x(n)[{A-Z}, {a-z}, {BS}]
 	Escribir "Ingrese su usuario: "
-	leer usuario                                          <-- Telegram no esta hecho
+	leer usuario                                          
+	Escribir "Ingrese su número de teléfono: "
+	leer telefono
 	Escribir "Ingrese la ciudad: "
 	leer ciudad
-	Escribir "Ingrese el pais: "
+	Escribir "Ingrese el país: "
 	leer pais
-	Escribir "Ingrese su correo: "
-	leer correo
-	Escribir "Datos de la cuenta de Facebook: "
-	Escribir "Usuario: " + usuario + "\nEdad: " + edad + "\nCiudad: " + ciudad + "\nPais: " + pais + "\nCorreo: " + correo + "\n" 
+	Escribir "Ingrese su área de interés"
+	leer area
+	Escribir "Datos de la cuenta de Telegram: "
+	Escribir "Usuario: " + usuario + "\nTelefono: " + telefono + "\nCiudad: " + ciudad + "\nPais: " + pais + "\nArea de Interés: " 
+		  + area + "\n" 
 fin funcion crearTelegram
 
-funcion crearFacebook()
+funcion crearSignal()
 	usuario, x(n)[{A-Z}, {a-z}, {BS}, {0-n}]
-	edad, x(n)[{0-n}]
+	telefono, x(n)[{0-n}]
 	ciudad, x(n)[{A-Z}, {a-z}, {BS}]
 	pais, x(n)[{A-Z}, {a-z}, {BS}]
-	correo, x(n)[{A-Z}, {a-z}, {BS}, {0-n}]
-	cadena, x(n)[{A-Z}, {a-z}, {BS}] <-- ""
+	hobby, x(n)[{A-Z}, {a-z}, {BS}, {0-n}]
 	Escribir "Ingrese su usuario: "
 	leer usuario
+	Escribir "Ingrese su teléfono"
+	leer telefono
 	Escribir "Ingrese la ciudad: "
 	leer ciudad
 	Escribir "Ingrese el pais: "
 	leer pais
-	Escribir "Ingrese su correo: "
-	leer correo
-	Escribir "Datos de la cuenta de Facebook: "
-	Escribir "Usuario: " + usuario + "\nEdad: " + edad + "\nCiudad: " + ciudad + "\nPais: " + pais + "\nCorreo: " + correo + "\n" 
-fin funcion crearFacebook
+	Escribir "Ingrese su hobby principal: "
+	leer hobby
+	Escribir "Datos de la cuenta Signal: "
+	Escribir "Usuario: " + usuario + "\nTeléfono: " + telefono + "\nCiudad: " + ciudad + "\nPais: " + pais + "\nHobby: " + hobby + "\n" 
+fin funcion crearSignal
 
-funcion crearFacebook()
+funcion crearInstagram()
 	usuario, x(n)[{A-Z}, {a-z}, {BS}, {0-n}]
 	edad, x(n)[{0-n}]
 	ciudad, x(n)[{A-Z}, {a-z}, {BS}]
-	pais, x(n)[{A-Z}, {a-z}, {BS}]
 	correo, x(n)[{A-Z}, {a-z}, {BS}, {0-n}]
-	cadena, x(n)[{A-Z}, {a-z}, {BS}] <-- ""
-	Escribir "Ingrese su usuario: "
+	Escribir "Ingrese el nombre de usuario: "
 	leer usuario
 	Escribir "Ingrese la ciudad: "
 	leer ciudad
-	Escribir "Ingrese el pais: "
-	leer pais
+	Escribir "Ingrese su edad: "
+	leer edad
 	Escribir "Ingrese su correo: "
 	leer correo
-	Escribir "Datos de la cuenta de Facebook: "
-	Escribir "Usuario: " + usuario + "\nEdad: " + edad + "\nCiudad: " + ciudad + "\nPais: " + pais + "\nCorreo: " + correo + "\n" 
-fin funcion crearFacebook
+	Escribir "Datos de la cuenta de Instagram: "
+	Escribir "Usuario: " + usuario + "\nEdad: " + edad + "\nCiudad: " + ciudad + "\nCorreo: " + correo + "\n" 
+fin funcion crearInstagram
+
+funcion crearFlickr()
+	usuario, x(n)[{A-Z}, {a-z}, {BS}, {0-n}]
+	correo, x(n)[{A-Z}, {a-z}, {BS}, {0-n}]
+	Escribir "Ingrese el nombre de usuario: "
+	leer usuario
+	Escribir "Ingrese su correo: "
+	leer correo
+	Escribir "Datos de la cuenta de Flickr: "
+	Escribir "Usuario: " + usuario + "\nCorreo: " + correo + "\n" 
+fin funcion crearFlickr
