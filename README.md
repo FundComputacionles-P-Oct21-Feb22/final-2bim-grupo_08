@@ -3,6 +3,8 @@
 
 ***
 
+Solucion hecha por: Felipe Jiménez y José David Piedra
+
 ### Problemática a resolver
 
 Generar un solución en miniespecificación
